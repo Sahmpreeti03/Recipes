@@ -5,7 +5,8 @@ import 'screens/veg/Veg.dart';
 import 'screens/nonveg/NonVeg.dart';
 import 'screens/desserts/Dessert.dart';
 import 'screens/desserts/RBDessert.dart';
-
+import 'screens/nonveg/RBNV.dart';
+import 'screens/veg/RBV.dart';
 
 
 void main(){
@@ -25,6 +26,8 @@ void main(){
         'nv': (context) => NonVegScreen(),
         'd': (context) => DessertScreen(),
         'rbd': (context) => RBDessertScreen(),
+        'rbv': (context) => RBVScreen(),
+        'rbnv': (context) => RBNVScreen(),
       },
     ),
   );
