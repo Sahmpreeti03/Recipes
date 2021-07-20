@@ -7,7 +7,9 @@ import 'screens/desserts/Dessert.dart';
 import 'screens/desserts/RBDessert.dart';
 import 'screens/nonveg/RBNV.dart';
 import 'screens/veg/RBV.dart';
-
+import 'screens/desserts/SKDessert.dart';
+import 'screens/nonveg/SKNV.dart';
+import 'screens/veg/SKV.dart';
 
 void main(){
 
@@ -28,6 +30,9 @@ void main(){
         'rbd': (context) => RBDessertScreen(),
         'rbv': (context) => RBVScreen(),
         'rbnv': (context) => RBNVScreen(),
+        'skd': (context) => SKDessertScreen(),
+        'skv': (context) => SKVScreen(),
+        'sknv': (context) => SKNVScreen(),
       },
     ),
   );
