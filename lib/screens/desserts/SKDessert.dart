@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'Dessert.dart';
+import 'package:flutter/material.dart';
+import 'package:flip_card/flip_card.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 class SKDessertScreen extends StatelessWidget {
   @override
@@ -21,32 +25,76 @@ class Pictures extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Image.asset(
-          'images/choco lava cake.png',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.asset(
-          'images/eggless icecream.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.asset(
-          'images/kada prasad.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.asset(
-          'images/kaju katli.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
       ],
     );

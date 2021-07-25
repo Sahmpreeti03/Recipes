@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flip_card/flip_card.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'Veg.dart';
 
 class SKVScreen extends StatelessWidget {
@@ -20,32 +23,76 @@ class Pictures extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Image.network(
-          'https://ranveerbrar.com/wp-content/uploads/2021/07/Paneer-lababdar-310x310.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.network(
-          'https://ranveerbrar.com/wp-content/uploads/2021/07/Pav-Bhaji-310x310.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.network(
-          'https://ranveerbrar.com/wp-content/uploads/2021/03/chilli-garlic-noodles-310x310.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.network(
-          'https://ranveerbrar.com/wp-content/uploads/2021/02/Triple-Schezwan-Rice-310x310.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
       ],
     );

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'NonVeg.dart';
+import 'package:flutter/material.dart';
+import 'package:flip_card/flip_card.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 class SKNVScreen extends StatelessWidget {
   @override
@@ -21,32 +25,76 @@ class Pictures extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Image.network(
-          'https://ranveerbrar.com/wp-content/uploads/2021/07/Amritsari-Fish-Tikka-310x310.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.network(
-          'https://ranveerbrar.com/wp-content/uploads/2021/07/Chicken-Tikka-Tawa-Pulav-310x310.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.network(
-          'https://ranveerbrar.com/wp-content/uploads/2020/12/Mutton-Beliram-310x310.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
         SizedBox(height: 10.0),
-        Image.network(
-          'https://ranveerbrar.com/wp-content/uploads/2021/02/ilish-paturi-310x310.jpg',
-          width: 600,
-          height: 400,
-          fit: BoxFit.cover,
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'FnXzNmwtQeg',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
         ),
       ],
     );
