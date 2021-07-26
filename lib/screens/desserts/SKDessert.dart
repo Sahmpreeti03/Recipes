@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Dessert.dart';
-import 'package:flutter/material.dart';
+
 import 'package:flip_card/flip_card.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
@@ -27,7 +27,7 @@ class Pictures extends StatelessWidget {
       children: [
         YoutubePlayer(
           controller: YoutubePlayerController(
-            initialVideoId: 'FnXzNmwtQeg',
+            initialVideoId: 'MFmez1coKfQ',
             flags: YoutubePlayerFlags(
               autoPlay: false,
               mute: false,
@@ -45,7 +45,7 @@ class Pictures extends StatelessWidget {
         SizedBox(height: 10.0),
         YoutubePlayer(
           controller: YoutubePlayerController(
-            initialVideoId: 'FnXzNmwtQeg',
+            initialVideoId: 'S0--5iXlZd0',
             flags: YoutubePlayerFlags(
               autoPlay: false,
               mute: false,
@@ -63,7 +63,7 @@ class Pictures extends StatelessWidget {
         SizedBox(height: 10.0),
         YoutubePlayer(
           controller: YoutubePlayerController(
-            initialVideoId: 'FnXzNmwtQeg',
+            initialVideoId: 's0P0ZVCXz-U',
             flags: YoutubePlayerFlags(
               autoPlay: false,
               mute: false,
@@ -81,7 +81,43 @@ class Pictures extends StatelessWidget {
         SizedBox(height: 10.0),
         YoutubePlayer(
           controller: YoutubePlayerController(
-            initialVideoId: 'FnXzNmwtQeg',
+            initialVideoId: 'zMZL_7HlcQc',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
+        ),
+        SizedBox(height: 10.0),
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'p0GmJFOL10M',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
+        ),
+        SizedBox(height: 10.0),
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'F5_eKSpty7w',
             flags: YoutubePlayerFlags(
               autoPlay: false,
               mute: false,

@@ -25,7 +25,7 @@ class Pictures extends StatelessWidget {
       children: [
         YoutubePlayer(
           controller: YoutubePlayerController(
-            initialVideoId: 'FnXzNmwtQeg',
+            initialVideoId: '2iffB1N4vL0',
             flags: YoutubePlayerFlags(
               autoPlay: false,
               mute: false,
@@ -43,7 +43,7 @@ class Pictures extends StatelessWidget {
         SizedBox(height: 10.0),
         YoutubePlayer(
           controller: YoutubePlayerController(
-            initialVideoId: 'FnXzNmwtQeg',
+            initialVideoId: 'dSP6L6vGDPs',
             flags: YoutubePlayerFlags(
               autoPlay: false,
               mute: false,
@@ -61,7 +61,7 @@ class Pictures extends StatelessWidget {
         SizedBox(height: 10.0),
         YoutubePlayer(
           controller: YoutubePlayerController(
-            initialVideoId: 'FnXzNmwtQeg',
+            initialVideoId: 'zSCYnVu_Hzc',
             flags: YoutubePlayerFlags(
               autoPlay: false,
               mute: false,
@@ -79,7 +79,42 @@ class Pictures extends StatelessWidget {
         SizedBox(height: 10.0),
         YoutubePlayer(
           controller: YoutubePlayerController(
-            initialVideoId: 'FnXzNmwtQeg',
+            initialVideoId: 'r4saZD0J_gU',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
+        ),
+        SizedBox(height: 10.0),
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'X2effcTdCZY',
+            flags: YoutubePlayerFlags(
+              autoPlay: false,
+              mute: false,
+              disableDragSeek: false,
+              loop: false,
+              isLive: false,
+              forceHD: false,
+              enableCaption: true,
+            ),
+          ),
+          showVideoProgressIndicator: true,
+
+
+        ),SizedBox(height: 10.0),
+        YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'Tm9G9f-k8c4',
             flags: YoutubePlayerFlags(
               autoPlay: false,
               mute: false,
